@@ -1,0 +1,2 @@
+madjs-browserify-example-dependency
+===================================
