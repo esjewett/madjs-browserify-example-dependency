@@ -1,3 +1,5 @@
+var jquery = require('jquery');
+
 function dependency() {
 	return "This is a dependency.";
 }
