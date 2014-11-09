@@ -1,7 +1,7 @@
 var jquery = require('jquery');
 
 function dependency() {
-	return "This is a dependency.";
+	return { text: "This is a dependency.", dependency: jquery };
 }
 
 module.exports = dependency;
