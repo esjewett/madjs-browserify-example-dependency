@@ -4,7 +4,8 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
 gulp.task('scripts', function () {
-	return browserify('./src/main.js', { standalone: 'dependency' })
+	return browserify('./src/main.js')
+		// .exclude('jquery')
 		.bundle()
 		.pipe(source('dependency.js'))
         .pipe(gulp.dest('./'));

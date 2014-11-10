@@ -18,10 +18,19 @@
   "homepage": "https://github.com/esjewett/madjs-browserify-example-dependency",
   "devDependencies": {
     "browserify": "^6.2.0",
+    "browserify-shim": "^3.8.0",
     "gulp": "^3.8.10",
     "vinyl-source-stream": "^1.0.0"
   },
   "dependencies": {
     "jquery": "^2.1.1"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   }
 }
