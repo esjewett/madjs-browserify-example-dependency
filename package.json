@@ -27,10 +27,5 @@
   },
   "browserify-shim": {
     "jquery": "global:jQuery"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
   }
 }
